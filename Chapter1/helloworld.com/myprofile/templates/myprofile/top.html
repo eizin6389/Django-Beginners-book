@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Taro's Profile</title>
-</head>
-<body>
-    <header>Taro's Profile</header>
+{% extends 'myprofile/base.html' %}
 
-    <nav>
-        <a href="/">TOP</a>
-        <a href="/resume">Resume</a>
-    </nav>
+{% block title %}Taro's Profile{% endblock %}
 
-    <h1>私についての概要</h1>
+{% block content %}
+
+    <h1>{{ name }}についての概要</h1>
     <p>東京に住んでいる、40歳になったエンジニアです。</p>
 
     <h2>趣味</h2>
     <ul>
         <li>映画鑑賞</li>
+        <li>読書</li>
     </ul>
     他の色々なコンテンツ...
-</body>
-</html>
+{% endblock %}

@@ -10,4 +10,4 @@ def top(request):
     return HttpResponse(html)
 
 def resume(request):
-    return HttpResponse('職務経歴ページです!!!')
+    return render(request,'myprofile/resume.html')
